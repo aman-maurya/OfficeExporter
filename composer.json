@@ -1,9 +1,14 @@
 {
     "name": "aman.maurya/office-exporter",
     "description": "This library will generate document file such as MsWord and OpenDoc",
+    "keywords": [
+        "PHP", "PHPOffice", "office", "PHPWord", "word", "template", "template processor", "openDoc", 
+        "docx", "OpenXML", "Office Open XML", "WordprocessingML",
+        "RTF", "Rich Text Format", "doc", "odt", "ODF", "OpenDocument",
+    ],
     "type": "library",
     "require": {
-        "php": "5.6"
+        "php": ">=5.6.40"
     },
     "license": "MIT",
     "autoload" : {
