@@ -1,0 +1,20 @@
+{
+    "name": "aman.maurya/office-exporter",
+    "description": "This library will generate document file such as MsWord and OpenDoc",
+    "type": "library",
+    "require": {
+        "php": "5.6"
+    },
+    "license": "MIT",
+    "autoload" : {
+		"psr-4" :{
+			"OfficeExporter\\": "src/" 	
+		}
+	},
+    "authors": [
+        {
+            "name": "aman.maurya",
+            "email": "aman.maurya.it@gmail.com"
+        }
+    ]
+}
