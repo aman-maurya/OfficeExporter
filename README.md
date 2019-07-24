@@ -32,7 +32,7 @@ $xml->setData('row', [
 	'empId' => '456',
 ]);
 
-$xml->genrateXml();
+$xml->generateXml();
 
 $xmlString = $xml->__toString();
 

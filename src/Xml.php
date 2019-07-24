@@ -57,7 +57,7 @@ class Xml {
      *
      * @return void
      */
-    function genrateXml() {
+    function generateXml() {
         $this->w->endElement();
         $this->w->endDocument();
         $this->xml = $this->w->outputMemory();
