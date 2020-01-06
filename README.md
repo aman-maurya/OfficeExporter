@@ -5,7 +5,7 @@ This library will generate document file such as MsWord and OpenDoc
 
 ### Installation
 
-To install PHP Curl Class, simply:
+To install library, simply:
 
     $ composer require aman.maurya/office-exporter @dev
 
