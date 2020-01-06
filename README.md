@@ -71,7 +71,7 @@ $download->setXsltSource('document.xslt');
 ```
 
 <p align="center">
-  <img alt="Office Exporter in action" src="OfficeExporter.gif">
+  <img alt="Office Exporter in action" src="https://github.com/aman-maurya/OfficeExporter/blob/master/OfficeExporter.gif">
 </p>
 
 ### Quick Start and Examples
