@@ -1,3 +1,4 @@
+
 # OfficeExporter
 
 This library will generate document file such as MsWord and OpenDoc
@@ -11,6 +12,67 @@ To install PHP Curl Class, simply:
 ### Requirements
 
 php: >=5.6.40
+
+### Getting Started
+
+- First you have to create template in word processor (Microsoft Office 2007 and above) with extension [.docx].
+- Then extract the main content file form word processor template. This can be done using php script or manually, here in this example I have chosen manual process.
+- Convert the XML file to [XSLT stylesheet](https://www.w3schools.com/xml/xsl_intro.asp). 
+
+```xml  
+<xsl:stylesheet version="1.0"  
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:template match="/">
+		....
+	</xsl:template>
+</xsl:stylesheet>
+```
+- Generate XML form database result.
+
+```php
+require __DIR__ . 'vendor/autoload.php';
+
+use OfficeExporter\Xml;
+
+$xml = new Xml('employee');
+
+$xml->setData('row', [
+	'name' => 'Vivian Warner',
+	'empId' => '123',
+]);
+
+$xml->setData('row', [
+	'name' => 'Shane Lloyd',
+	'empId' => '456',
+]);
+
+$xml->generateXml();
+
+<!-- Output -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<employee>
+	<row>
+		<name>Vivian Warner</name>
+		<empId>123</empId>
+	</row>
+	<row>
+		<name>Shane Lloyd</name>
+		<empId>456</empId>
+	</row>
+</employee>
+```
+- Merge the XmL and XSLT to generate a new ZIP archive. 
+
+```php
+$download->setDocTemplate('sample_word.docx');
+$download->setXsltSource('document.xslt');
+```
+
+<p align="center">
+  <img alt="Office Exporter in action" src="OfficeExporter.gif">
+</p>
 
 ### Quick Start and Examples
 
