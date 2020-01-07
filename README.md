@@ -69,6 +69,14 @@ $xml->generateXml();
 $download->setDocTemplate('sample_word.docx');
 $download->setXsltSource('document.xslt');
 ```
+### Step to extract main content file from word processor template
+
+- Create the word file with template.
+- Change that word file from .docx to .zip, and then extract that zip file.
+- Go inside the extracted folder and find the folder with name word.
+- Enter inside that folder and copy document.xml file and paste it at any location outside the extract folder and delete all extracted files.
+- Now convert document.xml file to XSLT stylesheet
+- Change it back word.zip file to word.docx file.
 
 <p align="center">
   <img alt="Office Exporter in action" src="https://github.com/aman-maurya/OfficeExporter/blob/master/OfficeExporter.gif">
