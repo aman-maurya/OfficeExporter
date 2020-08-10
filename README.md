@@ -16,7 +16,7 @@ php: >=5.6.40
 ### Getting Started
 
 - First you have to create template in word processor (Microsoft Office 2007 and above) with extension [.docx].
-- Then extract the main content file form word processor template. This can be done using php script or manually, [here](https://github.com/aman-maurya/OfficeExporter#step-to-extract-main-content-file-from-word-processor-template) in this example I have chosen manual process.
+- Then extract the main content file from word processor template. This can be done using php script or manually, [here](https://github.com/aman-maurya/OfficeExporter#step-to-extract-main-content-file-from-word-processor-template) in this example I have chosen manual process.
 - Convert the XML file to [XSLT stylesheet](https://www.w3schools.com/xml/xsl_intro.asp). 
 
 ```xml  
